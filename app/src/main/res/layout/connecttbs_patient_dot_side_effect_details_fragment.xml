@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:background="@color/connecttbswhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/connecttbsgrey"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/dot_side_effect_details_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgDotHaveSideEffects"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioGroup>
+
+
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/edtOtherSideEffect"
+            android:maxLines="3"
+            android:maxEms="3"
+            android:maxLength="100"
+            android:hint="Please mention the other side effect here in 3 lines."
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/connect_edit_text_back"
+            android:textColor="@color/connecttbsgrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:textColor="@color/white"
+        android:background="@drawable/connect_green_button"
+        android:text="@string/action_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

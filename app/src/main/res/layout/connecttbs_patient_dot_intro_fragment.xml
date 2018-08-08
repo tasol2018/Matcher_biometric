@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:background="@color/connecttbswhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginRight="@dimen/_140sdp"
+            android:gravity="center"
+            android:id="@+id/tvSurveyorIntro"
+            android:textColor="@color/connecttbsgreydark"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/dot_patient_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgDotCurrentStatus"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rbPatientAvlDOT"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/patient_available_for_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbCuredTreatCompleted"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_cured_treatment_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbDied"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_died"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbMoveAnotherArea"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_moved_to_another_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbRefferedFAcility"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_ferrered_to_facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbAdmitted"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_admitted_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:textColor="@color/connecttbsgrey"
+                android:text="@string/status_other_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:textColor="@color/white"
+        android:background="@drawable/connect_green_button"
+        android:text="@string/action_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
